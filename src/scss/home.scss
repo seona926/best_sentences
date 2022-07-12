@@ -11,24 +11,57 @@
   position: relative;
   z-index: 300;
   margin: 0 auto;
+  background-color: $background-color-white;
 }
 
 .main_contents {
-  width: 100vw;
+  width: 80vw;
   height: 100%;
   background-color: $background-color-white;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
 
 #section01 {
-  width: 800px;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 30px;
+
+  .text_box {
+    margin: 15px;
+    line-height: 140%;
+    max-height: 250px;
+  }
+
+  .arrow-container {
+    width: 20px;
+    height: 20px;
+
+    .arrow {
+      font-size: 30px;
+      color: $--gray-color;
+      cursor: pointer;
+    }
+  }
+  
+}
+
+#sentences_container {
+  width: 650px;
   height: 650px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  padding-top: 70px;
 }
 
 .sentence_box {
@@ -38,11 +71,19 @@
   border: 1px solid $light-grey;
   border-radius: 10px;
   text-align: center;
-  word-break: break-all;
+  word-break: keep-all;
   word-wrap: normal;
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: pre-wrap;
+  display: flex;
+  flex-direction: column;
+
+  .author {
+    font-weight: 700;
+    margin: 15px;
+  }
 }
 
 #main_box {
@@ -56,10 +97,62 @@
   color: $main-blue;
 }
 
-.text_box {
-  margin: 15px;
+#third_box {
+  background-color: $yellow;
+  color: $dark-font-color;
 }
-  
+
+#forth_box {
+  background-color: $--gray-color;
+  color: $bright-font-color;
+}
+
+#section02 {
+  width: 350px;
+  height: 750px;
+
+  #book_reco {
+    width: 300px;
+    height: 450px;
+    // background-color: #fff;
+    border-radius: 10px;
+    margin-top: 66px;
+    margin-left: 15px;
+    display: inline-block;
+    margin-top: 150px;
+
+    #section02-title {
+      width: 100%;
+      height: 20px;
+      font-size: 20px;
+      font-weight: 700;
+      color: $dark-font-color;
+      text-align: left;
+    }
+
+    img {
+      width: auto; 
+      height: auto;
+      max-width: 250px;
+      object-fit: cover;
+      margin-top: 15px;
+    }
+
+    .book_name-container {
+      margin: 10px 0;
+
+      .book_name {
+        font-weight: 600;
+        font-size: 18px;
+        margin: 10px 0;
+      }
+
+      .book_author {
+        font-size: 15px;
+      }
+    }
+  }
+}
   
 @media all and (max-width: 1279px) {
 
