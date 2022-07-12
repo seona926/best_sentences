@@ -3,35 +3,35 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <nav class="header-nav container flex-container">
-        <h1 class="logo">
-          <a class="logo-link" href="#">
+      <nav className="header-nav container flex-container">
+        <h1 className="logo">
+          <a className="logo-link" href="#">
             Best_STCS
           </a>
         </h1>
-        <ul class="header-menu flex-container">
+        <ul className="header-menu flex-container">
           <li>
-            <a class="header-menu-link" href="">
+            <a className="header-menu-link" href="">
               Books
             </a>
           </li>
           <li>
-            <a class="header-menu-link" href="">
+            <a className="header-menu-link" href="">
               Courses
             </a>
           </li>
           <li>
-            <a class="header-menu-link" href="">
+            <a className="header-menu-link" href="">
               Webinars
             </a>
           </li>
           <li>
-            <a class="header-menu-link" href="">
+            <a className="header-menu-link" href="">
               Blog
             </a>
           </li>
         </ul>
-        <button class="ghost-button">Subscribe</button>
+        <button className="ghost-button">Subscribe</button>
       </nav>
       {/* <section class="header-content">
         <figure class="header-img">

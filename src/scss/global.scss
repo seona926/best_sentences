@@ -5,7 +5,13 @@ $yellow:#efe8ca;
 $light-grey: #cfcfcf;
 $bright-font-color: #ededed;
 $dark-font-color: #727272;
-$background-color-white: #eaeaea;
+$background-color-white: #efefef;
+$--dark-color: hsl(0,0%,0%);
+$--gray-color: rgb(161, 161, 161);
+$--light-color: hsl(0,0%,100%);
+$--border-color-dark: hsl(10,95%,70%);
+$--border-color-normal: hsl(10,95%,83%);
+$--border-color-light: hsl(10,95%,93%);
 
 // font variables
 $font-size-big: "30px";
