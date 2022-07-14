@@ -5,11 +5,16 @@ const Header = () => {
     <header>
       <nav className="header-nav container flex-container">
         <h1 className="logo">
-          <a className="logo-link" href="#">
-            Best_STCS
+          <a className="logo-link" href="/">
+            Sentarium
           </a>
         </h1>
         <ul className="header-menu flex-container">
+          <li>
+            <a className="header-menu-link" href="/sentences">
+              Sentences
+            </a>
+          </li>
           <li>
             <a className="header-menu-link" href="">
               Books
@@ -17,17 +22,12 @@ const Header = () => {
           </li>
           <li>
             <a className="header-menu-link" href="">
-              Courses
+              Market
             </a>
           </li>
           <li>
             <a className="header-menu-link" href="">
-              Webinars
-            </a>
-          </li>
-          <li>
-            <a className="header-menu-link" href="">
-              Blog
+              Community
             </a>
           </li>
         </ul>
