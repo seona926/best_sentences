@@ -5,13 +5,13 @@ const Header = () => {
     <header>
       <nav className="header-nav container flex-container">
         <h1 className="logo">
-          <a className="logo-link" href="#">
-            Best_STCS
+          <a className="logo-link" href="/">
+            Sentarium
           </a>
         </h1>
         <ul className="header-menu flex-container">
           <li>
-            <a className="header-menu-link" href="">
+            <a className="header-menu-link" href="/sentences">
               Sentences
             </a>
           </li>

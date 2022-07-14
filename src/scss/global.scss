@@ -1,10 +1,12 @@
 // color variables
 $main-blue: #899dc8;
 $light-blue: #C4D7E0;
+$dark-blue: #5b76b1;
 $yellow:#efe8ca;
 $light-grey: #cfcfcf;
 $bright-font-color: #ededed;
 $dark-font-color: #727272;
+$black-font-color: #464646;
 $background-color-white: #efefef;
 $--dark-color: hsl(0,0%,0%);
 $--gray-color: rgb(161, 161, 161);
@@ -12,6 +14,8 @@ $--light-color: hsl(0,0%,100%);
 $--border-color-dark: hsl(10,95%,70%);
 $--border-color-normal: hsl(10,95%,83%);
 $--border-color-light: hsl(10,95%,93%);
+$background-color-lightblue: rgb(222, 236, 251);
+$background-color-mediumblue: rgb(193, 210, 234);
 
 // font variables
 $font-size-big: "30px";
@@ -19,3 +23,22 @@ $font-size-medium: "15px";
 $font-size-small: "10px";
 
 
+/* pagination */
+.pagination {
+    width: 230px;
+    margin: 45px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    a {
+        font-size: 16px;
+        color: #383838;
+        cursor: pointer;
+    }
+
+    li.active a {
+        color: #60a3f9;
+    }
+
+}
