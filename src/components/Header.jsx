@@ -12,22 +12,22 @@ const Header = () => {
         <ul className="header-menu flex-container">
           <li>
             <a className="header-menu-link" href="">
+              Sentences
+            </a>
+          </li>
+          <li>
+            <a className="header-menu-link" href="">
               Books
             </a>
           </li>
           <li>
             <a className="header-menu-link" href="">
-              Courses
+              Market
             </a>
           </li>
           <li>
             <a className="header-menu-link" href="">
-              Webinars
-            </a>
-          </li>
-          <li>
-            <a className="header-menu-link" href="">
-              Blog
+              Community
             </a>
           </li>
         </ul>
