@@ -7,29 +7,27 @@
   
 #main_container {
   width: 100vw;
-  height: 100vh;
+  height: 2200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 300;
-  // margin: 0 auto;
   background-color: $background-color-white;
 }
 
 .main_contents {
-  width: 80vw;
+  width: 100%;
   height: 100%;
   background-color: $background-color-white;
   // margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  // justify-content: center;
+  flex-direction: column;
 }
 
 #section01 {
   width: 700px;
-  height: 700px;
+  height: 950px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -110,8 +108,64 @@
 }
 
 #section02 {
-  width: 350px;
+  width: 100%;
+  height: 950px;
+  background-color: $background-color-lightblue;  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  #images_container {
+    width: 650px;
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .section02-title {
+      width: 100%;
+      height: 30px;
+      font-size: 30px;
+      font-weight: 700;
+      color: $dark-font-color;
+      text-align: center;
+      margin: 30px 0;
+    }
+
+
+  .image_wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(50, 50);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin: auto;
+      border-radius: 10px;
+      border: 1px solid $--gray-color;
+    }
+  }
+}
+
+#first_image, #second_image, #third_image, #fourth_image {
+  margin: 10px;
+}
+
+#section03 {
+  width: 100%;
   height: 750px;
+  background-color: $yellow;
 
   #book_reco {
     width: 300px;
@@ -123,7 +177,7 @@
     display: inline-block;
     margin-top: 150px;
 
-    #section02-title {
+    #section03-title {
       width: 100%;
       height: 20px;
       font-size: 20px;
