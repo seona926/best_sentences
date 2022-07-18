@@ -7,7 +7,7 @@
   
 #main_container {
   width: 100vw;
-  height: 2200px;
+  height: 2500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,6 +34,16 @@
   // margin: 0 auto;
   align-items: center;
   justify-content: center;
+
+  .section01-title {
+    width: 100%;
+    height: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $dark-font-color;
+    text-align: center;
+    margin: 35px 0 15px 0;
+  }
 
   .text_box {
     margin: 15px;
@@ -127,15 +137,15 @@
     justify-content: center;
   }
 
-    .section02-title {
-      width: 100%;
-      height: 30px;
-      font-size: 30px;
-      font-weight: 700;
-      color: $dark-font-color;
-      text-align: center;
-      margin: 30px 0;
-    }
+  .section02-title {
+    width: 100%;
+    height: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $dark-font-color;
+    text-align: center;
+    margin: 30px 0 40px 0;
+  }
 
 
   .image_wrapper {
@@ -164,27 +174,32 @@
 
 #section03 {
   width: 100%;
-  height: 750px;
+  height: 950px;
   background-color: $yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  #section03-title {
+    width: 100%;
+    height: 30px;
+    font-size: 30px;
+    font-weight: 700;
+    color: $dark-font-color;
+    text-align: center;
+  }
 
   #book_reco {
     width: 300px;
-    height: 450px;
+    height: 550px;
     // background-color: #fff;
     border-radius: 10px;
-    margin-top: 66px;
-    margin-left: 15px;
-    display: inline-block;
-    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-    #section03-title {
-      width: 100%;
-      height: 20px;
-      font-size: 20px;
-      font-weight: 700;
-      color: $dark-font-color;
-      text-align: left;
-    }
 
     img {
       width: auto; 

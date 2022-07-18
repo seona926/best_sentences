@@ -18,6 +18,7 @@ const Home = () => {
       <div id={styles["main_container"]}>
         <div className={cx("main_contents")}>
           <section id={styles["section01"]}>
+            <span className={cx("section01-title")}>Best Sentences - Text</span>
             <div className={cx("arrow-container")}>
               {/* <FontAwesomeIcon icon={faCircleArrowLeft} className="arrow" /> */}
             </div>
@@ -105,15 +106,15 @@ const Home = () => {
             </div>
           </section>
           <section id={styles["section03"]}>
+            <span id={styles["section03-title"]}>이달의 도서 추천</span>
             <div id={styles["book_reco"]}>
-              <span id={styles["section03-title"]}>이달의 도서 추천</span>
               <img
                 src={require("../images/books/bycicle.png")}
                 alt="자전거여행"
               />
               <br />
               <p className={cx("book_name-container")}>
-                <div className={cx("book_name")}>자전거여행</div>
+                <div className={cx("book_name")}>자전거여행2</div>
                 <div className={cx("book_author")}>김훈</div>
               </p>
             </div>
