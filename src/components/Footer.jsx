@@ -14,10 +14,15 @@ const Footer = () => {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/sentences">Sentences</Link>
             </li>
             <li>
-              {/* <Link to="/notice">공지사항</Link> */}
+              <Link to="/books">Books</Link>
+            </li>
+            <li>
+              <Link to="/market">Market</Link>
+            </li>
+            <li>
               <Link to="/community">Community</Link>
             </li>
           </ul>
