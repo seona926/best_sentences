@@ -1,0 +1,98 @@
+@import "global.scss";
+
+#main_container {
+    width: 100vw;
+    height: 840px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+    background-color: $background-color-white;
+    overflow: overlay;
+
+    .main_contents {
+        width: 1200px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title_box {
+            width: 55%;
+            height: 30px;
+            text-align: left;
+            margin: 15px 0;
+
+            span {
+                font-size: 20px;
+            }
+        }
+
+        #write_container {
+            width: 55%;
+            height: 70%;
+            background-color: $background-color-white;
+            border: 1px solid $light-grey;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 15px;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+            .user-info {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 30px;
+                margin: 20px 0;
+                font-size: 16px;
+            }
+
+            .title_container {
+                width: 100%;
+
+                input {
+                    width: 90%;
+                    height: 30px;
+                    border: 1px solid $light-grey;
+                    border-radius: 7px;
+                    padding: 4px;
+                    margin: 10px 0;
+                }
+            }
+
+            .content_container {
+                width: 100%;
+
+                textarea {
+                    width: 90%;
+                    height: 160px;
+                    border: 1px solid $light-grey;
+                    border-radius: 7px;
+                    padding: 4px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .file_container {
+                width: 100%;
+                text-align: start;
+
+                input {
+                    margin-left: 30px;
+                    margin-top: 10px;
+                }
+            }
+            
+        }
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 5px 15px;
+        color: $dark-font-color;
+        border: 1px solid $dark-font-color;
+        cursor: pointer;
+    }
+}
