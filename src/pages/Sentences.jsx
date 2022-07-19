@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ReactPaginate from "react-paginate";
 import classNames from "classnames/bind";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faThumbsUp,
@@ -28,7 +29,9 @@ const Sentences = () => {
               <span>좋아하는 문장들을 공유해보세요.</span>
             </h2>
           </div>
-          <button className={cx("write_btn")}>글쓰기</button>
+          <Link to="/sentences/write">
+            <button className={cx("write_btn")}>글쓰기</button>
+          </Link>
           <div id={styles["sentence_container"]}>
             <div className={cx("sentence_box")}>
               <div className={cx("sentence_box--sentence")}>
@@ -40,21 +43,27 @@ const Sentences = () => {
                   <div className={cx("sentence_box--date")}>2022-07-14</div>
                 </div>
                 <div className={cx("sentence_box--sentence--bottom--right")}>
-                  <FontAwesomeIcon
-                    icon={faThumbsUp}
-                    className={cx("thumbs-up")}
-                  />{" "}
-                  25
-                  <FontAwesomeIcon
-                    icon={faThumbsDown}
-                    className={cx("thumbs-down")}
-                  />{" "}
-                  1
-                  <FontAwesomeIcon
-                    icon={faCommentDots}
-                    className={cx("comments")}
-                  />{" "}
-                  10
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsUp}
+                      className={cx("thumbs-up")}
+                    />{" "}
+                    25
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsDown}
+                      className={cx("thumbs-down")}
+                    />{" "}
+                    1
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faCommentDots}
+                      className={cx("comments")}
+                    />{" "}
+                    10
+                  </span>
                 </div>
               </div>
             </div>
@@ -72,9 +81,27 @@ const Sentences = () => {
                   <div className={cx("sentence_box--date")}>2022-07-14</div>
                 </div>
                 <div className={cx("sentence_box--sentence--bottom--right")}>
-                  <FontAwesomeIcon icon={faThumbsUp} />
-                  <FontAwesomeIcon icon={faThumbsDown} />
-                  <FontAwesomeIcon icon={faCommentDots} />
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsUp}
+                      className={cx("thumbs-up")}
+                    />{" "}
+                    25
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsDown}
+                      className={cx("thumbs-down")}
+                    />{" "}
+                    1
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faCommentDots}
+                      className={cx("comments")}
+                    />{" "}
+                    10
+                  </span>
                 </div>
               </div>
             </div>
@@ -90,9 +117,27 @@ const Sentences = () => {
                   <div className={cx("sentence_box--date")}>2022-07-14</div>
                 </div>
                 <div className={cx("sentence_box--sentence--bottom--right")}>
-                  <FontAwesomeIcon icon={faThumbsUp} />
-                  <FontAwesomeIcon icon={faThumbsDown} />
-                  <FontAwesomeIcon icon={faCommentDots} />
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsUp}
+                      className={cx("thumbs-up")}
+                    />{" "}
+                    25
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsDown}
+                      className={cx("thumbs-down")}
+                    />{" "}
+                    1
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faCommentDots}
+                      className={cx("comments")}
+                    />{" "}
+                    10
+                  </span>
                 </div>
               </div>
             </div>
@@ -108,9 +153,27 @@ const Sentences = () => {
                   <div className={cx("sentence_box--date")}>2022-07-14</div>
                 </div>
                 <div className={cx("sentence_box--sentence--bottom--right")}>
-                  <FontAwesomeIcon icon={faThumbsUp} />
-                  <FontAwesomeIcon icon={faThumbsDown} />
-                  <FontAwesomeIcon icon={faCommentDots} />
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsUp}
+                      className={cx("thumbs-up")}
+                    />{" "}
+                    25
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsDown}
+                      className={cx("thumbs-down")}
+                    />{" "}
+                    1
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faCommentDots}
+                      className={cx("comments")}
+                    />{" "}
+                    10
+                  </span>
                 </div>
               </div>
             </div>
@@ -124,9 +187,27 @@ const Sentences = () => {
                   <div className={cx("sentence_box--date")}>2022-07-14</div>
                 </div>
                 <div className={cx("sentence_box--sentence--bottom--right")}>
-                  <FontAwesomeIcon icon={faThumbsUp} />
-                  <FontAwesomeIcon icon={faThumbsDown} />
-                  <FontAwesomeIcon icon={faCommentDots} />
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsUp}
+                      className={cx("thumbs-up")}
+                    />{" "}
+                    25
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsDown}
+                      className={cx("thumbs-down")}
+                    />{" "}
+                    1
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faCommentDots}
+                      className={cx("comments")}
+                    />{" "}
+                    10
+                  </span>
                 </div>
               </div>
             </div>
@@ -140,9 +221,27 @@ const Sentences = () => {
                   <div className={cx("sentence_box--date")}>2022-07-14</div>
                 </div>
                 <div className={cx("sentence_box--sentence--bottom--right")}>
-                  <FontAwesomeIcon icon={faThumbsUp} />
-                  <FontAwesomeIcon icon={faThumbsDown} />
-                  <FontAwesomeIcon icon={faCommentDots} />
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsUp}
+                      className={cx("thumbs-up")}
+                    />{" "}
+                    25
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsDown}
+                      className={cx("thumbs-down")}
+                    />{" "}
+                    1
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faCommentDots}
+                      className={cx("comments")}
+                    />{" "}
+                    10
+                  </span>
                 </div>
               </div>
             </div>
@@ -156,9 +255,27 @@ const Sentences = () => {
                   <div className={cx("sentence_box--date")}>2022-07-14</div>
                 </div>
                 <div className={cx("sentence_box--sentence--bottom--right")}>
-                  <FontAwesomeIcon icon={faThumbsUp} />
-                  <FontAwesomeIcon icon={faThumbsDown} />
-                  <FontAwesomeIcon icon={faCommentDots} />
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsUp}
+                      className={cx("thumbs-up")}
+                    />{" "}
+                    25
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faThumbsDown}
+                      className={cx("thumbs-down")}
+                    />{" "}
+                    1
+                  </span>
+                  <span className={cx("icon")}>
+                    <FontAwesomeIcon
+                      icon={faCommentDots}
+                      className={cx("comments")}
+                    />{" "}
+                    10
+                  </span>
                 </div>
               </div>
             </div>
