@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Sentences from "./pages/Sentences";
 import SentenceWrite from "./pages/SentenceWrite";
+import Register from "./pages/Register";
 
 import "./css/header.css";
 
@@ -17,6 +18,7 @@ function App() {
           exact={true}
           element={<SentenceWrite />}
         />
+        <Route path="/register" exact={true} element={<Register />} />
       </Routes>
     </div>
   );

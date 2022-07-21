@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -31,7 +32,9 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <button className="ghost-button">Subscribe</button>
+        <Link to="/register">
+          <button className="ghost-button">Subscribe</button>
+        </Link>
       </nav>
       {/* <section class="header-content">
         <figure class="header-img">
