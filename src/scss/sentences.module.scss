@@ -27,12 +27,13 @@
         }
 
         .write_btn {
-            background-color: $main-blue;
             width: 80px;
-            padding: 5px 10px;
-            color: $background-color-white;
             margin: 0 0 5px 780px;
             cursor: pointer;
+            padding: 5px 15px;
+            color: $dark-font-color;
+            border: 1px solid $dark-font-color;
+
         }
     }
 
@@ -72,11 +73,12 @@
     .sentence_box {
         width: 90%;
         max-height: 150px;
-        border: 1px solid $light-grey;
+        // border: 1px solid $light-grey;
         border-radius: 0 15px 0 15px;
-        margin: 5px 0;
+        margin: 10px 0;
         color: $black-font-color;
         padding: 15px 0;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         
 
         &:nth-child(odd) {
