@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ReactPaginate from "react-paginate";
 import classNames from "classnames/bind";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faThumbsUp,
@@ -17,7 +17,11 @@ const cx = classNames.bind(styles);
 
 const Sentences = () => {
   const handlePageClick = () => {};
+  const navigate = useNavigate();
 
+  const onClickSentenceBox = () => {
+    navigate("/sentences/detail");
+  };
   return (
     <div id={styles["wrap"]}>
       <Header />
@@ -33,7 +37,7 @@ const Sentences = () => {
             <button className={cx("write_btn")}>글쓰기</button>
           </Link>
           <div id={styles["sentence_container"]}>
-            <div className={cx("sentence_box")}>
+            <div className={cx("sentence_box")} onClick={onClickSentenceBox}>
               <div className={cx("sentence_box--sentence")}>
                 WHY DO YOU MAKE EFFORTS COMMONLY, DON'T WANT TO LIVE COMMONLY!
               </div>
@@ -67,7 +71,7 @@ const Sentences = () => {
                 </div>
               </div>
             </div>
-            <div className={cx("sentence_box")}>
+            <div className={cx("sentence_box")} onClick={onClickSentenceBox}>
               <div className={cx("sentence_box--sentence")}>
                 설령 나이를 먹어도 풋풋한 시원의 풍경을 가슴속에 지니고 있는
                 사람은 몸속에 난롯불을 지피고 있는 것과 같아서 그다지 춥지 않게
@@ -105,7 +109,7 @@ const Sentences = () => {
                 </div>
               </div>
             </div>
-            <div className={cx("sentence_box")}>
+            <div className={cx("sentence_box")} onClick={onClickSentenceBox}>
               <div className={cx("sentence_box--sentence")}>
                 말과 글은 머리에만 남겨지는 게 아닙니다. 가슴에도 새겨집니다.
                 마음 깊숙이 꽂힌 언어는 지지 않는 꽃입니다. 우린 그 꽃을
@@ -141,7 +145,7 @@ const Sentences = () => {
                 </div>
               </div>
             </div>
-            <div className={cx("sentence_box")}>
+            <div className={cx("sentence_box")} onClick={onClickSentenceBox}>
               <div className={cx("sentence_box--sentence")}>
                 일상의 공간은 어디로든 떠날 수 있는 출발점이 되어주고, 여행의
                 시간은 그간 우리가 지나온 익숙함들을 가장 눈부신 것으로
@@ -177,7 +181,7 @@ const Sentences = () => {
                 </div>
               </div>
             </div>
-            <div className={cx("sentence_box")}>
+            <div className={cx("sentence_box")} onClick={onClickSentenceBox}>
               <div className={cx("sentence_box--sentence")}>
                 WHY DO YOU MAKE EFFORTS COMMONLY, DON'T WANT TO LIVE COMMONLY!
               </div>
@@ -211,7 +215,7 @@ const Sentences = () => {
                 </div>
               </div>
             </div>
-            <div className={cx("sentence_box")}>
+            <div className={cx("sentence_box")} onClick={onClickSentenceBox}>
               <div className={cx("sentence_box--sentence")}>
                 WHY DO YOU MAKE EFFORTS COMMONLY, DON'T WANT TO LIVE COMMONLY!
               </div>
@@ -245,7 +249,7 @@ const Sentences = () => {
                 </div>
               </div>
             </div>
-            <div className={cx("sentence_box")}>
+            <div className={cx("sentence_box")} onClick={onClickSentenceBox}>
               <div className={cx("sentence_box--sentence")}>
                 WHY DO YOU MAKE EFFORTS COMMONLY, DON'T WANT TO LIVE COMMONLY!
               </div>

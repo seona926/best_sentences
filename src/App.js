@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Sentences from "./pages/Sentences";
 import SentenceWrite from "./pages/SentenceWrite";
 import Register from "./pages/Register";
+import SentenceDetail from "./pages/SentenceDetail";
 
 import "./css/header.css";
 
@@ -19,6 +20,11 @@ function App() {
           element={<SentenceWrite />}
         />
         <Route path="/register" exact={true} element={<Register />} />
+        <Route
+          path="/sentences/detail"
+          exact={true}
+          element={<SentenceDetail />}
+        />
       </Routes>
     </div>
   );
