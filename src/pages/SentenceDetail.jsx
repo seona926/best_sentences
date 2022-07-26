@@ -3,6 +3,12 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import classNames from "classnames/bind";
 import styles from "../scss/sentenceDetail.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faThumbsUp,
+  faThumbsDown,
+  faCommentDots,
+} from "@fortawesome/free-solid-svg-icons";
 
 const cx = classNames.bind(styles);
 
@@ -16,7 +22,7 @@ const SentenceDetail = () => {
             <span className={cx("title")}>문장 상세보기</span>
           </div> */}
           <div className={cx("write_info")}>
-            <span>Sophia</span>
+            <span>ID: Sophia</span>
             <span>2022-07-26 16:40</span>
           </div>
           <div className={cx("sentence_content")}>
@@ -27,12 +33,37 @@ const SentenceDetail = () => {
             <div className={cx("sentence")}>
               WHY DO YOU MAKE EFFORTS COMMONLY, DON'T WANT TO LIVE COMMONLY!
             </div>
+            <img
+              src={require("../images/sentence_images/sentence_image03.png")}
+              alt="sentence"
+              className={cx("sentence_img")}
+            />
           </div>
           <div className={cx("free_talk")}>
             <div>
               이 문장을 읽었을 때 평소의 저에게 하는말 같더라구요. <br />제
               자신을 채찍질 할 때 되뇌어 볼만 한 문장인 것 같아서 공유합니다.
             </div>
+          </div>
+          <div className={cx("icons")}>
+            <span className={cx("icon")}>
+              <FontAwesomeIcon icon={faThumbsUp} className={cx("thumbs-up")} />{" "}
+              25
+            </span>
+            <span className={cx("icon")}>
+              <FontAwesomeIcon
+                icon={faThumbsDown}
+                className={cx("thumbs-down")}
+              />{" "}
+              1
+            </span>
+            <span className={cx("icon")}>
+              <FontAwesomeIcon
+                icon={faCommentDots}
+                className={cx("comments")}
+              />{" "}
+              10
+            </span>
           </div>
           <hr />
           <div className={cx("comment_section-breaker")}>
@@ -82,6 +113,25 @@ const SentenceDetail = () => {
             <div className={cx("comment")}>
               <div className={cx("comment_content")}>
                 저도 정말 공감하는 문장이에요..!!
+              </div>
+              <div className={cx("id_date_container")}>
+                <span className={cx("comment_id")}>katy</span>
+                <span className={cx("comment_date")}>2022-07-26 17:50</span>
+              </div>
+            </div>
+            <div className={cx("comment")}>
+              <div className={cx("comment_content")}>
+                저도 정말 공감하는 문장이에요..!!저도 정말 공감하는
+                문장이에요..!!저도 정말 공감하는 문장이에요..!!저도 정말
+                공감하는 문장이에요..!!저도 정말 공감하는 문장이에요..!!저도
+                정말 공감하는 문장이에요..!!저도 정말 공감하는
+                문장이에요..!!저도 정말 공감하는 문장이에요..!!저도 정말
+                공감하는 문장이에요..!!저도 정말 공감하는 문장이에요..!!저도
+                정말 공감하는 문장이에요..!!저도 정말 공감하는
+                문장이에요..!!저도 정말 공감하는 문장이에요..!!저도 정말
+                공감하는 문장이에요..!!저도 정말 공감하는 문장이에요..!!저도
+                정말 공감하는 문장이에요..!!저도 정말 공감하는
+                문장이에요..!!저도 정말 공감하는 문장이에요..!!
               </div>
               <div className={cx("id_date_container")}>
                 <span className={cx("comment_id")}>katy</span>
