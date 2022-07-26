@@ -1,39 +1,43 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import classNames from "classnames/bind";
+import styles from "../scss/header.module.scss";
+
+const cx = classNames.bind(styles);
 
 const Header = () => {
   return (
     <header>
-      <nav className="header-nav container flex-container">
-        <h1 className="logo">
-          <a className="logo-link" href="/">
+      <nav className={cx("header-nav", "container", "flex-container")}>
+        <h1 className={cx("logo")}>
+          <a className={cx("logo-link")} href="/">
             Sentarium
           </a>
         </h1>
-        <ul className="header-menu flex-container">
+        <ul className={cx("header-menu", "flex-container")}>
           <li>
-            <a className="header-menu-link" href="/sentences">
+            <a className={cx("header-menu-link")} href="/sentences">
               Sentences
             </a>
           </li>
           <li>
-            <a className="header-menu-link" href="">
+            <a className={cx("header-menu-link")} href="">
               Books
             </a>
           </li>
           <li>
-            <a className="header-menu-link" href="">
+            <a className={cx("header-menu-link")} href="">
               Market
             </a>
           </li>
           <li>
-            <a className="header-menu-link" href="">
+            <a className={cx("header-menu-link")} href="">
               Community
             </a>
           </li>
         </ul>
         <Link to="/register">
-          <button className="ghost-button">Subscribe</button>
+          <button className={cx("ghost-button")}>Subscribe</button>
         </Link>
       </nav>
       {/* <section class="header-content">
