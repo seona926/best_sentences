@@ -36,8 +36,8 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <Link to="/register">
-          <button className={cx("ghost-button")}>Subscribe</button>
+        <Link to="/signin">
+          <button className={cx("ghost-button")}>Sign in</button>
         </Link>
       </nav>
       {/* <section class="header-content">

@@ -5,6 +5,7 @@ import Sentences from "./pages/Sentences";
 import SentenceWrite from "./pages/SentenceWrite";
 import Register from "./pages/Register";
 import SentenceDetail from "./pages/SentenceDetail";
+import Signin from "./pages/Signin";
 
 import "./css/header.css";
 
@@ -25,6 +26,7 @@ function App() {
           exact={true}
           element={<SentenceDetail />}
         />
+        <Route path="/signin" exact={true} element={<Signin />} />
       </Routes>
     </div>
   );

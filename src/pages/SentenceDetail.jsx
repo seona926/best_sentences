@@ -33,6 +33,7 @@ const SentenceDetail = () => {
             <div className={cx("sentence")}>
               WHY DO YOU MAKE EFFORTS COMMONLY, DON'T WANT TO LIVE COMMONLY!
             </div>
+            <hr />
             <img
               src={require("../images/sentence_images/sentence_image03.png")}
               alt="sentence"
